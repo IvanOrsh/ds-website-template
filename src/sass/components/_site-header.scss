@@ -4,21 +4,15 @@
   color: $site-header-color;
   background-color: $site-header-background-color;
   padding: $site-header-padding;
-  margin: $site-header-margin;
 
-  &__layout {
-    display: grid;
-    place-items: center;
-    gap: $grid-gap;
-  }
+  &__inner {
+    display: flex;
+    gap: $size-4;
+    align-items: $site-header-alignment;
+    justify-content: $site-header-jusitifcation-small-screens;
 
-  @include mq(medium) {
-    &__layout {
-      width: 100%;
-      display: flex;
-      gap: $size-4;
-      align-items: $site-header-alignment;
-      justify-content: $site-header-justification;
+    @include mq(medium) {
+      justify-content: $site-header-jusitifcation-large-screens;
     }
   }
 }
