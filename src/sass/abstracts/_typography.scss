@@ -1,10 +1,9 @@
-$-ff-sans: "Source Sans Pro", sans-serif;
-$-ff-serif: "Alegreya SC", serif;
+$-ff-sans: system-ui, sans-serif;
+$-ff-serif: serif;
 
 $font-family-base: $-ff-sans;
-$font-family-accent: $-ff-serif;
+$font-family-accent: $-ff-sans;
 
-// if you update these...
 $font-sizes: (
   "small": (
     "900": 3.75rem,
@@ -13,6 +12,8 @@ $font-sizes: (
     "600": 1.125rem,
     "500": 1.125rem,
     "400": 1rem,
+    "300": 0.925rem,
+    "200": 0.875rem,
   ),
   "large": (
     "900": 3.75rem,
@@ -21,9 +22,12 @@ $font-sizes: (
     "600": 1.3125rem,
     "500": 1.125rem,
     "400": 1rem,
+    "300": 0.925rem,
+    "200": 0.875rem,
   ),
 );
-// don't forget to update these as well!
+
+$font-size-300: var(--fs-300);
 $font-size-400: var(--fs-400);
 $font-size-500: var(--fs-500);
 $font-size-600: var(--fs-600);
